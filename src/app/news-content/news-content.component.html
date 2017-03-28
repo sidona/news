@@ -1,0 +1,16 @@
+<md-card class="example-card" *ngFor="let new of news" style="padding-bottom: 5px">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title><strong>{{new.title}}</strong></md-card-title>
+  </md-card-header>
+  <md-card-content>
+
+    <p style="display: inline-block;">
+      <img md-card-image [src]="new.enclosure.link" style="width: 50px;height: 50px;float: left; margin: 0px 15px 15px 0px;">
+      {{new.content}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+
+  </md-card-actions>
+</md-card>

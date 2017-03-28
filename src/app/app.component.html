@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<app-navbar></app-navbar>
+<div class="flex-container"
+     fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start">
+  <div class="flex-item" fxFlex="20%" fxFlex.xs="50%"> 10 </div>
+  <div class="flex-item" fxFlex>
+    <app-news-content></app-news-content>
+  </div>
+  <div class="flex-item" fxFlex="30%">
+  <app-live-exchange></app-live-exchange>
+  </div>
+</div>
